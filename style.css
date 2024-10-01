@@ -10,7 +10,6 @@
 
 
 
-
 body{
 
     background-color: #020f24;
@@ -23,17 +22,11 @@ body{
 
 header{
 
-    border-bottom: 1px solid rgba(207, 229, 252, 0.2);
+    border-bottom: 0.1vw solid rgba(207, 229, 252, 0.2);
     width: 100%;
     position: fixed;
-    background-color: #020f24;
-}
-
-header h1{
-
-    font-size: 34px;
-    font-weight: bolder;
-
+    background-color: #020f24c9;
+    z-index: 10;
 }
 
 header nav{
@@ -44,36 +37,34 @@ header nav{
 
 }
 
+
 header nav li{
 
     display: inline;
-    margin-left: 16px;
-    font-size: 16px;
+    margin-left: 1.5vw;
+    font-size: 100%;
 
 }
 
-.firstbutton{
-    color: #cfe5fc;
-    cursor: pointer;
-}
 
 header nav li a{
     
-    padding: 12px 12px 7px 12px;
     color: #cfe5fc;
     text-decoration: none;
     
 }
 
+
 header .container{
 
-    padding: 16px 16px;
+    padding: 1vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     
 }
+
 
 .container{
     max-width: 1280px;
@@ -81,131 +72,213 @@ header .container{
     margin: 0 auto;
 }
 
-
 /*Começo do "Sobre mim:"*/
-#apresentação .container{
 
-    justify-content: space-between;
-    align-items: center;
+#sobremim{
+
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    padding-top: 14%;
+    justify-content: center;
+    gap: 1%;
+
+}
+
+
+#sobremim .contmim{
+
+    display: flex;
+    gap: 4%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 2%;
+    border-radius: 30px;
+    width: 40%;
+
+}
+
+
+#contatos ul{
+
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    align-items: center;
+    padding-top: 65%;
+    list-style: none;
     margin: 0 auto;
+
+}
+
+#contatos li a{
+
+
+    font-size: 90%;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #cfe5fc;
+    position: absolute
+
+}
+
+#contatos li a:hover{
+
+    font-size: 100%;
+    filter: brightness(110%);
+
+}
+
+
+#sobremim > #sobre{ /* Texto do sobre mim.*/
+
+    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-#apresentação .container div{
 
-    margin-left: -10%;
+#sobremim h1{
+    font-size: 3vw;
+}
+
+#sobremim{ 
+
+    padding-bottom: 2%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(midia/f7a7349f0cc57a370203a7b1f9fbb113.gif) no-repeat center center;
+    object-fit: contain;
+    background-size: 100%;
+    z-index: 1;
+
+
+}
+
+
+#sobremim .contmim > img{ /* Imagem flor/*/
+
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 200px;
+    padding-bottom: 5%;
     
 }
 
-#apresentação .container img{
+#sobremim #gatoapontando{ /* Imagem gato*/
 
-    padding-top: 20%;
-    margin-left: -100%;
-
-}
-
-#apresentação .container p{
-
-    text-align: left;
-    
+    display: flex;
 
 }
 
-#apresentação h2 .container{
 
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-top: 40%;
-    font-weight: bold;
-    text-align: left;
-    font-size: 80px;
-
-}
 
 
 /*Começo do "Estou aprendendo:"*/
 
+
 #aprendendo{
 
     width: 100%;
-    padding: 16px 16px;
-    margin-top: 200px;
+    padding: 0.9vw;
+    margin-top: 13vw;
 
 }
 
+
 #aprendendo > h1{
 
-    font-size: 34px;
+    font-size: 2.5vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0 auto;
-    margin-bottom: 120px;
+    margin-bottom: 0.5vw;
 
 }
 
-#aprendendo .container2{
+
+#aprendendo > p{
+
+    border-bottom: 0.1vw solid rgba(207, 229, 252, 0.2);
+    width: 50%;
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 8vw;
+
+}
+
+#aprendendo .container3{
 
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 5vw;
     align-items: stretch;
     justify-content: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
     
 }
 
-#aprendendo .container2 .bloco img{
 
-    width: 100px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 10px;
+#aprendendo .container3 .linhaicon{
+
+    width: 10vw;
+    background-color: #05204D;
+    padding: 0.05vw;
     display: flex;
-
-
+    margin-bottom: 0.8vw;
 
 }
 
-#aprendendo .container2 .bloco img .icons{
 
-    width: 100px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 10px;
+#aprendendo .container3 .icons{
+
+    width: 5vw;
+    background-color: #87f10f;
+    border-radius: 20%;
+    padding: 0.8vw;
     display: flex;
-
-
 
 }
 
-#aprendendo .container2 .bloco h1{
 
-    font-size: 45px;
+
+#aprendendo .container3 .bloco h1{
+
+    font-size: 2vw;
     font-weight: bold;
 
 }
 
-#aprendendo .container2 .bloco h2{
 
-    font-weight: normal;
+#aprendendo .container3 .bloco h2{
+
     text-align: center;
+    font-size: 1.2vw;
+    font-weight: normal;
+
 }
 
 
-#aprendendo .container2 .bloco{
+#aprendendo .container3 .bloco{
 
     width: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    background-color: rgba(207, 229, 252, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 50px;
     border-radius: 20px;
+    margin-bottom: 120px;
+    
 
 }
 
