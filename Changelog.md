@@ -15,11 +15,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Cabeçalho corrigido.
+- 
 
 ### Removed
 
 - 
+
 
 ## [0.0.1] - 2024-10-01
 
@@ -30,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adição da área "Atualmente estou... "
 
 
+
 ## [0.0.2]
 
 ### Added
@@ -37,3 +39,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Adição de um background no cabeçalho.
 - Adição de conteúdo no "Sobre mim:"
 - Adição de conteúdo no "Atualmente estou... " 
+
+
+### Changed
+
+- Cabeçalho corrigido.
+
+
+
+## [0.0.3]
+
+### Added
+- Adição de indicação de mais conteúdo.
+- Adição de um rodapé.
+- Adição de uma aba de "meus contatos."
+- Adição de algumas animações.
+
+
+### Changed
+
+- Links no cabeçalho funcionam e indicam as categorias do site.
+
+
+
+
+
+
+

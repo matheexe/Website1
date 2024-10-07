@@ -25,7 +25,7 @@ header{
     border-bottom: 0.1vw solid rgba(207, 229, 252, 0.2);
     width: 100%;
     position: fixed;
-    background-color: #020f24c9;
+    background-color: #020f24ce;
     z-index: 10;
 }
 
@@ -43,6 +43,7 @@ header nav li{
     display: inline;
     margin-left: 1.5vw;
     font-size: 100%;
+    position: relative;
 
 }
 
@@ -51,6 +52,14 @@ header nav li a{
     
     color: #cfe5fc;
     text-decoration: none;
+    transition: all ease 0.3s;
+    display: inline-block;
+}
+
+header nav li a:hover{
+    
+    transform: translateY(-2px);
+    filter: brightness(110%);
     
 }
 
@@ -89,7 +98,7 @@ header .container{
 
     display: flex;
     gap: 4%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
     padding: 2%;
     border-radius: 30px;
@@ -117,13 +126,14 @@ header .container{
     font-weight: bolder;
     text-decoration: none;
     color: #cfe5fc;
-    position: absolute
+    position: absolute;
+    transition: ease 0.3s;
 
 }
 
 #contatos li a:hover{
 
-    font-size: 100%;
+    font-size: 95%;
     filter: brightness(110%);
 
 }
@@ -147,19 +157,27 @@ header .container{
 
     padding-bottom: 2%;
     position: relative;
+    z-index: 1;
+}
+
+#sobremim::before{ /*Antes do container "sobremim", com z-index: -1; para ficar atras.*/
+
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
     background: url(midia/f7a7349f0cc57a370203a7b1f9fbb113.gif) no-repeat center center;
-    object-fit: contain;
-    background-size: 100%;
-    z-index: 1;
-
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
 
 }
 
 
-#sobremim .contmim > img{ /* Imagem flor/*/
 
+#sobremim .contmim > img{ /* Imagem flor/*/
     display: flex;
     position: relative;
     flex-direction: row;
@@ -169,9 +187,36 @@ header .container{
 }
 
 #sobremim #gatoapontando{ /* Imagem gato*/
+    display: flex;
+}
+
+
+#maissiteabaixo{
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+    
+}
 
+.iconmouse{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5vw;
+    padding-top: 0vw;
+    border-radius: 30px;
+    
+}
+
+.iconmouse img{
+    width: 5vw;
+    border-radius: 30px;
+    margin-bottom: 0.5vw;
 }
 
 
@@ -283,4 +328,66 @@ header .container{
 }
 
 
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+
+}
+
+footer #footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 70vw;
+    padding-top: 1vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 3vw;
+
+}
+
+footer #footer p{
+    font-size: 2vw;
+    padding-left: 2vw ;
+
+}
+
+footer h5, h4{
+    margin-bottom: 1vw;
+    font-weight: bold;
+
+
+}
+
+footer nav ul{
+    list-style: none;
+
+
+}
+
+footer nav li{
+    margin-top: 0.5vw;
+
+}
+
+footer nav a{
+    padding-left: 0.1vw;
+    color: #cfe5fc;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    display: inline-block;
+
+}
+
+footer nav a:hover{
+    filter: brightness(110%);
+    transform: scale(103%);
+    
+}
 
