@@ -9,7 +9,6 @@
 }
 
 
-
 body{
 
     background-color: #020f24;
@@ -343,7 +342,6 @@ footer #footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
     width: 70vw;
     padding-top: 1vw;
     background-color: rgba(0, 0, 0, 0.2);
@@ -352,17 +350,51 @@ footer #footer{
 
 }
 
-footer #footer p{
-    font-size: 2vw;
-    padding-left: 2vw ;
+footer form input, form textarea,
+form button{
+    font-family: 'Noto Sans Syriac', sans-serif;
+    background-color: #cfe5fc;
+    display: block;
+    width: 12vw;
+    height: 2vw;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 0.2vw;
+    text-align: center;
+}
 
+footer form textarea{
+
+    padding-top: 10px;
+}
+
+footer form button{
+    margin-top: 0.3vw;
+    background-color: #87f10f;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+footer form button:hover{
+    background-color: #c7ff87;
+    transform: translateY(-2px);
+}
+
+footer form ::placeholder{
+    color: #020f24;
+}
+
+footer form p{
+    margin-top: 2vw;
+}
+
+footer form textarea{
+    resize: none;
 }
 
 footer h5, h4{
     margin-bottom: 1vw;
     font-weight: bold;
-
-
 }
 
 footer nav ul{
@@ -373,6 +405,12 @@ footer nav ul{
 
 footer nav li{
     margin-top: 0.5vw;
+
+}
+
+footer .linksContatos{
+    margin-left: 10vw;
+
 
 }
 
@@ -390,4 +428,3 @@ footer nav a:hover{
     transform: scale(103%);
     
 }
-
