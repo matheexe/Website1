@@ -57,14 +57,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+
 ### Changed
 
 - Links no cabeçalho funcionam e indicam as categorias do site.
 - Diminui o padding bottom da imagem da flor, diminuindo o comprimento da caixa transparente do "sobre mim."
 
 
+## [0.0.4]
 
-
+### Added
+- Adição de um formulário no rodapé.
 
 
 
