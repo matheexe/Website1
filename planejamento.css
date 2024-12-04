@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #101208;
+    color: #e9efdc;
+    font-family: 'Noto Sans Syriac', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+header{
+    width: 100%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.2vw;
+}
+
+header .container p{
+    font-size: 2em;
+}
+
+header .container ul a{
+    display: block;
+    font-size: 1.2vw;
+    padding-left: 1vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e9efdc;
+    transition: all ease 0.3s;
+    
+    
+}
+
+header .container ul a:hover{
+    transform: translateY(-2px);
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#conquistas .container{
+    padding-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+
+}
+
+#conquistas .container img{
+    border-radius: 10px;
+}
+
+
+#conquistas .container #descrição{
+    padding-right: 14vw;
+}
+
+#conquistas .container #descrição h1{
+
+    font-size: 2.3vw;
+    font-weight: bold;
+}

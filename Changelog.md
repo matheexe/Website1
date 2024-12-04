@@ -57,7 +57,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-
 ### Changed
 
 - Links no cabeçalho funcionam e indicam as categorias do site.
@@ -69,5 +68,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Adição de um formulário no rodapé.
 
+
+
+## [0.0.5]
+
+### Added
+- Nova página do website.
 
 
